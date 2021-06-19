@@ -263,7 +263,7 @@ export default function Home(props) {
     );
 }
 
-export async function getStaticProps (context) {
+export async function getServerSideProps(context) {
     const session = await getSession(context);
 
     let user = [];

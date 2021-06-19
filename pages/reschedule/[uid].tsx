@@ -5,7 +5,7 @@ export default function Type(props) {
     return null;
 }
 
-export async function getStaticProps (context) {
+export async function getServerSideProps(context) {
     const booking = await prisma.booking.findFirst({
         where: {
             uid: context.query.uid,

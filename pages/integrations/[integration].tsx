@@ -111,7 +111,7 @@ export default function integration(props) {
     );
 }
 
-export async function getStaticProps (context) {
+export async function getServerSideProps(context) {
     const session = await getSession(context);
 
     const integration = await prisma.credential.findFirst({
