@@ -35,6 +35,10 @@ module.exports = withTM({
   typescript: {
     ignoreBuildErrors: true,
   },
+  images: {
+    loader: 'imgix',
+    path: 'https://sample-test-next.netlify.app/',
+  },
   async redirects() {
     return [
       {
