@@ -127,7 +127,7 @@ export default function Success(props) {
     )
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps (context) {
     const user = await prisma.user.findFirst({
         where: {
           username: context.query.user,

@@ -322,7 +322,7 @@ export default function EventType(props) {
     );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps (context) {
     const session = await getSession(context);
     if (!session) {
         return { redirect: { permanent: false, destination: '/auth/login' } };

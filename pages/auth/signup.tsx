@@ -99,7 +99,7 @@ export default function Signup(props) {
   );
 }
 
-export async function getServerSideProps(ctx) {
+export async function getStaticProps (ctx) {
   if (!ctx.query.token) {
     return {
       notFound: true,
