@@ -35,6 +35,7 @@ module.exports = withTM({
   typescript: {
     ignoreBuildErrors: true,
   },
+  target: 'serverless',
   images: {
     loader: 'imgix',
     path: 'https://sample-test-next.netlify.app/',
