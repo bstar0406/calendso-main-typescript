@@ -71,7 +71,7 @@ export default function Signup(props) {
             {hasErrors && <ErrorAlert message={errorMessage} />}
             <div>
               <div className="mb-2">
-                <UsernameInput required />
+                <UsernameInput />
               </div>
               <div className="mb-2">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
